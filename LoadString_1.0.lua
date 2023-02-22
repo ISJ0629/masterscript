@@ -15,7 +15,7 @@ if game.PlaceId == 281489669 then --wizard tycoon
     loadstring(game:HttpGet("https://pastebin.com/raw/euFigAv1"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
-if game.PlaceId == 6236529295 then --
+if game.PlaceId == 6236529295 then -- train fighting sim
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
 --loadstring(game:HttpGet("https://pastebin.com/yVdXMaFy"))() --재접 스크립트
