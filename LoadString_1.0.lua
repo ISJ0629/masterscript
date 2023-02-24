@@ -14,7 +14,8 @@ end
 if game.PlaceId == 281489669 then --wizard tycoon
     loadstring(game:HttpGet("https://pastebin.com/raw/euFigAv1"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/maiwwn/Wizard%20Tycoon%20-%202%20Player/2pWizardTycoonGUI"))()
+    --BROUGHT TO YOU BY RSCRIPTS.NET--
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Wizard%20Tycoon%20-%202%20Player/2pWizardTycoonGUI"))()
 end
 if game.PlaceId == 6236529295 then -- train fighting sim
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
