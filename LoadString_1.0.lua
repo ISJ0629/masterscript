@@ -2,7 +2,7 @@ if game.PlaceId == 6839171747 then --doors ingame
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Loader.lua"))()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/loadstring.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ISJ0629/scripts/master/scripts/DOORS/doors.txt"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    --loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end
 if game.PlaceId == 6516141723 then -- doors lobby
