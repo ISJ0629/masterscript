@@ -228,6 +228,7 @@ do
 			end
 			return ("03 %02d"):format(G)
 		end)(tonumber(os.date"%Y"))] = "🥚",
+		["06 29"] = "🎉"
 		["10 31"] = "🎃",
 		["12 25"] = "🎄"
 	})[os.date("%m %d")]
