@@ -4250,9 +4250,11 @@ end
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Infinite Yield support server.'}
 CMDs[#CMDs + 1] = {NAME = 'carcrusher2 / car2', DESC = 'Enable Car Crusher 2 AutoFarm by GMDMachine'}
-CMDs[#CMDs + 1] = {NAME = 'scanner / doorsscanner', DESC = 'Load Doors Scanner. Credit by Deivid'}
-CMDs[#CMDs + 1] = {NAME = 'crucifix / cr', DESC = 'Load Crucifix on Anything. Credit by PenguinManiac, use Q + Left click to Crucifix'}
-CMDs[#CMDs + 1] = {NAME = 'health [num]', DESC = 'Just set your health.'}
+CMDs[#CMDs + 1] = {NAME = 'doorsscanner / scanner', DESC = 'Load Doors Scanner. Credit by Deivid'}
+CMDs[#CMDs + 1] = {NAME = 'doorscrucifix / cr / crucifix', DESC = 'Load Crucifix on Anything. Credit by PenguinManiac, use Q + Left click to Crucifix'}
+CMDs[#CMDs + 1] = {NAME = 'vapev4 / vape', DESC = 'Loads VapeV4.'}
+CMDs[#CMDs + 1] = {NAME = 'vynixius / vy', DESC = 'Loads Vynixius Loader.'}
+CMDs[#CMDs + 1] = {NAME = 'health [num] / h [num]', DESC = 'Just set your health.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'olddex / odex', DESC = 'Opens Old DEX by Moon'}
@@ -10059,7 +10061,7 @@ addcmd('carcrusher2',{'car2'},function(args, speaker)
 	loadstring(game:HttpGet("https://pastebin.com/raw/NkEFsUWm"))()
 end)
 
-addcmd('crucifix',{'cr'},function(args, speaker)
+addcmd('doorscrucifix',{'crucifix', 'cr'},function(args, speaker)
 	notify("Loading",'Hold on a sec')
 	-- Full credit to PenguinManiac
 	-- ok
@@ -10077,11 +10079,25 @@ addcmd('scanner',{'doorsscanner'},function(args, speaker)
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
 end)
 
-addcmd('health',{'h0'},function(args, speaker)
+addcmd('health',{'h'},function(args, speaker)
 	notify("Alert",'Health set.')
 	-- Full credit to GMDMachine
 	-- ok
 	game.Players.LocalPlayer.Character.Humanoid.Health = args[1]
+end)
+
+addcmd('vapev4',{'vape'},function(args, speaker)
+	notify("Loading",'Hold on a sec')
+	-- Full credit to RegularVynixu
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+addcmd('vynixius',{'vy'},function(args, speaker)
+	notify("Loading",'Hold on a sec')
+	-- Full credit to 7GrandDadPGN
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
 end)
 
 addcmd('audiologger',{'alogger'},function(args, speaker)
