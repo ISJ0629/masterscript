@@ -617,7 +617,7 @@ Credits.Position = UDim2.new(0, 0, 0.9, 30)
 Credits.Size = UDim2.new(0, 250, 0, 20)
 Credits.Font = Enum.Font.SourceSansLight
 Credits.FontSize = Enum.FontSize.Size18
-Credits.Text = "Edge // Zwolf // Moon // Toon"
+Credits.Text = "Edge // Zwolf // Moon // GMDMachine"
 Credits.TextColor3 = Color3.new(1, 1, 1)
 Credits.ZIndex = 10
 
@@ -4252,6 +4252,8 @@ CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Infi
 CMDs[#CMDs + 1] = {NAME = 'carcrusher2 / car2', DESC = 'Enable Car Crusher 2 AutoFarm by GMDMachine'}
 CMDs[#CMDs + 1] = {NAME = 'doorsscanner / scanner', DESC = 'Load Doors Scanner. Credit by Deivid'}
 CMDs[#CMDs + 1] = {NAME = 'doorscrucifix / cr / crucifix', DESC = 'Load Crucifix on Anything. Credit by PenguinManiac, use Q + Left click to Crucifix'}
+CMDs[#CMDs + 1] = {NAME = 'tpgui / tpguiv1', DESC = 'Loads TPGUI V1'}
+CMDs[#CMDs + 1] = {NAME = 'epicminigames', DESC = 'epicminigamesGui'}
 CMDs[#CMDs + 1] = {NAME = 'vapev4 / vape', DESC = 'Loads VapeV4.'}
 CMDs[#CMDs + 1] = {NAME = 'vynixius / vy', DESC = 'Loads Vynixius Loader.'}
 CMDs[#CMDs + 1] = {NAME = 'health [num] / h [num]', DESC = 'Just set your health.'}
@@ -10055,14 +10057,12 @@ addcmd('remotespy',{'rspy'},function(args, speaker)
 end)
 
 addcmd('carcrusher2',{'car2'},function(args, speaker)
-	notify("Loading",'Hold on a sec')
 	-- Full credit to GMDMachine
 	-- ok
 	loadstring(game:HttpGet("https://pastebin.com/raw/NkEFsUWm"))()
 end)
 
 addcmd('doorscrucifix',{'crucifix', 'cr'},function(args, speaker)
-	notify("Loading",'Hold on a sec')
 	-- Full credit to PenguinManiac
 	-- ok
 	_G.Uses = 1
@@ -10073,14 +10073,24 @@ addcmd('doorscrucifix',{'crucifix', 'cr'},function(args, speaker)
 end)
 
 addcmd('scanner',{'doorsscanner'},function(args, speaker)
-	notify("Loading",'Hold on a sec')
 	-- Full credit to Deivid
 	-- ok
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
 end)
 
+addcmd('tpgui',{'tpguiv1'},function(args, speaker)
+	-- Full credit to me
+	-- ok
+	loadstring(game:HttpGet('https://pastebin.com/raw/Xa45P3tw'))()
+end)
+
+addcmd('epicminigame',{'epicminigames'},function(args, speaker)
+	-- Full credit to Somewut
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+end)
+
 addcmd('health',{'h'},function(args, speaker)
-	notify("Alert",'Health set.')
 	-- Full credit to GMDMachine
 	-- ok
 	game.Players.LocalPlayer.Character.Humanoid.Health = args[1]
