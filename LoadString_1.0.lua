@@ -1,4 +1,5 @@
 if game.PlaceId == 6839171747 then --doors ingame
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/loadstring.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Loader.lua"))()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/loadstring.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ISJ0629/scripts/master/scripts/DOORS/doors.txt"))()
