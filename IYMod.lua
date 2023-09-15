@@ -4249,6 +4249,7 @@ end
 
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Infinite Yield support server.'}
+CMDs[#CMDs + 1] = {NAME = 'gmdlib / glib / gmdutil', DESC = 'Loads Utils GUI by GMDMachine'}
 CMDs[#CMDs + 1] = {NAME = 'carcrusher2 / car2', DESC = 'Enable Car Crusher 2 AutoFarm by GMDMachine'}
 CMDs[#CMDs + 1] = {NAME = 'babftcopy / bcopy', DESC = 'Loads Babft copy GUI by max2007killer.'}
 CMDs[#CMDs + 1] = {NAME = 'doorsscanner / scanner', DESC = 'Load Doors Scanner. Credit by Deivid'}
@@ -10063,6 +10064,12 @@ addcmd('carcrusher2',{'car2'},function(args, speaker)
 	-- Full credit to GMDMachine
 	-- ok
 	loadstring(game:HttpGet("https://pastebin.com/raw/NkEFsUWm"))()
+end)
+
+addcmd('gmdlib',{'glib', 'gmdutil'},function(args, speaker)
+	-- Full credit to GMDMachine
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ISJ0629/UtilsGUI/main/GMDLIB.lua"))()
 end)
 
 addcmd('babftcopy',{'bcopy'},function(args, speaker)
