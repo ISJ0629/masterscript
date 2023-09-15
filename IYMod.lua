@@ -4250,6 +4250,7 @@ end
 CMDs = {}
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Infinite Yield support server.'}
 CMDs[#CMDs + 1] = {NAME = 'carcrusher2 / car2', DESC = 'Enable Car Crusher 2 AutoFarm by GMDMachine'}
+CMDs[#CMDs + 1] = {NAME = 'babftcopy / bcopy', DESC = 'Loads Babft copy GUI by max2007killer.'}
 CMDs[#CMDs + 1] = {NAME = 'doorsscanner / scanner', DESC = 'Load Doors Scanner. Credit by Deivid'}
 CMDs[#CMDs + 1] = {NAME = 'doorscrucifix / cr / crucifix', DESC = 'Load Crucifix on Anything. Credit by PenguinManiac, use Q + Left click to Crucifix'}
 CMDs[#CMDs + 1] = {NAME = 'tpgui / tpguiv1', DESC = 'Loads TPGUI V1'}
@@ -10062,6 +10063,12 @@ addcmd('carcrusher2',{'car2'},function(args, speaker)
 	-- Full credit to GMDMachine
 	-- ok
 	loadstring(game:HttpGet("https://pastebin.com/raw/NkEFsUWm"))()
+end)
+
+addcmd('babftcopy',{'bcopy'},function(args, speaker)
+	-- Full credit to max2007killer
+	-- ok
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
 end)
 
 addcmd('loadstring',{'masterstring', 'load'},function(args, speaker)
